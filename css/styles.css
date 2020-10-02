@@ -10201,6 +10201,7 @@ header.masthead video {
   -webkit-transform: translateX(-50%) translateY(-0%);
   transform: translateX(-50%) translateY(-0%);
 }
+
 header.masthead .overlay {
   position: absolute;
   top: 0;
@@ -10208,7 +10209,7 @@ header.masthead .overlay {
   height: 720px;
   width: 100%;
   /* background-color: black; */
-  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkaHD4z9BwgJEBCuAMTAGoSgwVAP7mBgUJgQ1XAAAAAElFTkSuQmCC) repeat;
   opacity: 0.5;
   z-index: 1;
 }
@@ -10216,7 +10217,7 @@ header.masthead .overlay {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 20rem;
   }
   header.masthead .masthead-subheading {
     font-size: 1.5rem;
@@ -10231,17 +10232,17 @@ header.masthead .overlay {
     margin-bottom: 0rem;
   }
 }
-#portfolio .portfolio-item {
+#prodotti .prodotti-item {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
 }
-#portfolio .portfolio-item .portfolio-link {
+#prodotti .prodotti-item .prodotti-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#prodotti .prodotti-item .prodotti-link .prodotti-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -10252,57 +10253,57 @@ header.masthead .overlay {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#prodotti .prodotti-item .prodotti-link .prodotti-hover .prodotti-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+#prodotti .prodotti-item .prodotti-link:hover .prodotti-hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-caption {
+#prodotti .prodotti-item .prodotti-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+#prodotti .prodotti-item .prodotti-caption .prodotti-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+#prodotti .prodotti-item .prodotti-caption .prodotti-caption-subheading {
   font-style: italic;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.portfolio-modal .modal-dialog {
+.prodotti-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
 }
-.portfolio-modal .modal-content {
+.prodotti-modal .modal-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
 }
-.portfolio-modal .modal-content h2 {
+.prodotti-modal .modal-content h2 {
   font-size: 3rem;
   line-height: 3rem;
 }
-.portfolio-modal .modal-content p.item-intro {
+.prodotti-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.portfolio-modal .modal-content p {
+.prodotti-modal .modal-content p {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content ul.list-inline {
+.prodotti-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content img {
+.prodotti-modal .modal-content img {
   margin-bottom: 2rem;
 }
-.portfolio-modal .close-modal {
+.prodotti-modal .close-modal {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -10311,7 +10312,7 @@ header.masthead .overlay {
   cursor: pointer;
   background-color: transparent;
 }
-.portfolio-modal .close-modal:hover {
+.prodotti-modal .close-modal:hover {
   opacity: 0.3;
 }
 
