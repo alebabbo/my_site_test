@@ -1950,6 +1950,7 @@ pre code {
     border: 0;
   }
   header.masthead video {
+    margin-left: 20%;
     /* display: none; */
   }
   header.masthead {
@@ -1967,6 +1968,7 @@ pre code {
     border: 0;
   }
   header.masthead video {
+    margin-left: 15%;
     /* display: none; */
   }
   header.masthead {
