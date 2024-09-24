@@ -1951,7 +1951,7 @@ pre code {
   }
   header.masthead video {
     /* margin-left: 20%; */
-    display: none;
+    /* display: none; */
   }
   header.masthead {
     background-image: url("../assets/img/header-sfondo.jpg");
@@ -1969,7 +1969,7 @@ pre code {
   }
   header.masthead video {
     /* margin-left: 15%; */
-    display: none;
+    /* display: none; */
   }
   header.masthead {
     background-image: url("../assets/img/header-sfondo.jpg");
@@ -1986,7 +1986,7 @@ pre code {
     border: 0;
   }
   header.masthead video {
-    display: none;
+    /* display: none; */
   }
   header.masthead {
     background-image: url("../assets/img/header-sfondo.jpg");
