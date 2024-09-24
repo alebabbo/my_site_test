@@ -1950,7 +1950,7 @@ pre code {
     border: 0;
   }
   header.masthead video {
-    margin-left: 20%;
+    /* margin-left: 20%; */
     /* display: none; */
   }
   header.masthead {
@@ -1968,7 +1968,7 @@ pre code {
     border: 0;
   }
   header.masthead video {
-    margin-left: 15%;
+    /* margin-left: 15%; */
     /* display: none; */
   }
   header.masthead {
@@ -10202,7 +10202,7 @@ header.masthead video {
   position: absolute;
   top: 0%;
   left: 50%;
-  /* min-width: 100%; */
+  min-width: 100%;
   min-height: 720px;
   max-height: 720px;
   width: auto;
