@@ -10202,7 +10202,7 @@ header.masthead video {
   position: absolute;
   top: 0%;
   left: 50%;
-  min-width: 100%;
+  /* min-width: 100%; */
   min-height: 720px;
   max-height: 720px;
   width: auto;
