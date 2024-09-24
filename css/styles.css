@@ -10188,7 +10188,7 @@ header.masthead .masthead-subheading {
 }
 header.masthead .masthead-heading {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 2.25rem;
   margin-bottom: 0rem;
   text-align: left;
@@ -10247,7 +10247,8 @@ header.masthead .overlay {
     margin-bottom: 0rem;
     margin-top: 2rem;
     margin-left: 30%;
-    color: #040505;
+    /* color: #040505; */
+    /* color: #4eef85ff; */
   }
 
 }
