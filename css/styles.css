@@ -10237,8 +10237,8 @@ header.masthead .overlay {
 }
 
 @media (max-width: 768px) {
-  header.masthead .overlay {
-    height: 50px;
+    header.masthead .overlay {
+    /* height: 50px; */
   }
 }
 
