@@ -1952,6 +1952,7 @@ pre code {
   header.masthead video {
     /* margin-left: 20%; */
     /* display: none; */
+    overflow: hidden;
   }
   header.masthead {
     background-image: url("../assets/img/header-sfondo.jpg");
@@ -1971,6 +1972,7 @@ pre code {
   header.masthead video {
     /* margin-left: 15%; */
     /* display: none; */
+    overflow: hidden;
   }
   header.masthead {
     background-image: url("../assets/img/header-sfondo.jpg");
@@ -1989,6 +1991,7 @@ pre code {
   }
   header.masthead video {
     /* display: none; */
+    overflow: hidden;
   }
   header.masthead {
     background-image: url("../assets/img/header-sfondo.jpg");
@@ -10169,6 +10172,7 @@ img::-moz-selection {
   }
 }
 header.masthead {
+  position: relative;
   padding-top: 10.5rem;
   padding-bottom: 27rem;
   text-align: left;
