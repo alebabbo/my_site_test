@@ -631,7 +631,7 @@ pre code {
   flex-grow: 1;
   min-width: 0;
   max-width: 100%;
-  border: 1px solid rgba(86,61,124,.2)
+  /* border: 1px solid rgba(86,61,124,.2)*/
 }
 
 .row-cols-1 > * {
