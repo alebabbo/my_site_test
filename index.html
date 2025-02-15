@@ -134,10 +134,12 @@
                         <div class="prodotti-item">
                             <div class="prodotti-caption">
                                 <div class="text-center">
-                                    <div class="prodotti-caption-heading"><span style="background-color: #4eef85ff"><b>Chitarra<br>Pianoforte<br>Violino<br>Basso<br>Batteria<br>Canto<br>Effettistica<br>Home recording<br>
-                                    <!-- <div class="prodotti-caption-subheading text-muted">Descrizione</div> -->
-                                    <a data-toggle="modal" href="#corsiModal1"><u> Propedeutica musicale 3-4 anni</u></a><br>
-                                    <a data-toggle="modal" href="#corsiModal2"><u> Propedeutica musicale 5-6 anni</u></a>
+                                    <div class="prodotti-caption-heading"><span style="background-color: #4eef85ff">
+                                        <b><a data-toggle="modal" href="#corsiModal3"><u>Batteria &#8599</u></a><br>
+                                        Chitarra<br>Pianoforte<br>Violino<br>Basso<br>Canto<br>Effettistica<br>Home recording<br>
+                                        <!-- <div class="prodotti-caption-subheading text-muted">Descrizione</div> -->
+                                        <a data-toggle="modal" href="#corsiModal1"><u> Propedeutica musicale 3-4 anni &#8599</u></a><br>
+                                        <a data-toggle="modal" href="#corsiModal2"><u> Propedeutica musicale 5-6 anni &#8599</u></a>
                                     </b></span>
                                     </div>                             
                                 </div>
@@ -203,6 +205,32 @@
                                             <div class="modal-body">
                                                 <!-- Project Details Go Here-->
                                                 <img class="img-fluid d-block mx-auto" src="assets/img/propedeutica_musicale/2024_11_03_propedeutica_2.jpg" alt="" />
+                                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                                    <i class="fas fa-times mr-1"></i>
+                                                    Chiudi
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Corsi Modal 3-->
+                    <div class="prodotti-modal modal fade" id="corsiModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="modal-body">
+                                                <!-- Project Details Go Here-->
+                                                <h2 class="text-uppercase">Corso di batteria</h2>
+                                                <p class="item-intro text-muted">con Lorenzo</p>
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
+                                                <p>Mi chiamo Lorenzo, classe 2001, suono la batteria da ormai 13 anni, e da diverso tempo sono impegnato a suonare sui palchi di tutto il nord Italia con una sola missione: tenere il tempo. Mi diletto in diversi generi perché penso che qualsiasi canzone possa arricchirci, senza dimenticarsi della pratica e dell’esercizio.</p>
+                                                <!--<a data-dismiss="modal" class="nav-link" href="#contact" >Chiedi informazioni sul corso</a>  GUARDA LO SCRIPT IN FONDO-->
                                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                                     <i class="fas fa-times mr-1"></i>
                                                     Chiudi
@@ -825,5 +853,17 @@
         <!-- <script src="assets/mail/contact_me.js"></script> -->
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+        <!-- Chiudi e manda a sezione-->
+        <!--<script>
+        jQuery(function($) {
+            $('#corsiModal3').on('hidden.bs.modal', function (e) {
+                $('html, body').animate({
+                    scrollTop: $("#contact").offset().top
+                }, 2000);
+            })
+        });
+        </script>-->
+        
     </body>
 </html>
