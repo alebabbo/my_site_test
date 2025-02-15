@@ -230,8 +230,12 @@
                                                 <p class="item-intro text-muted">con Lorenzo</p>
                                                 <img class="img-fluid d-block mx-auto" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
                                                 <p>Mi chiamo Lorenzo, classe 2001, suono la batteria da ormai 13 anni, e da diverso tempo sono impegnato a suonare sui palchi di tutto il nord Italia con una sola missione: tenere il tempo. Mi diletto in diversi generi perché penso che qualsiasi canzone possa arricchirci, senza dimenticarsi della pratica e dell’esercizio.</p>
-                                                <!--<a data-dismiss="modal" class="nav-link" href="#contact" >Chiedi informazioni sul corso</a>  GUARDA LO SCRIPT IN FONDO-->
-                                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                                <!-- guarda script in fondo per custom-close !OCCHIO! devi duplicare lo script e cambiare nome del Modal -->
+                                                <button class="btn btn-primary btn-lg btn-block custom-close" type="button">
+                                                    Chiedi informazioni sul corso
+                                                </button>
+                                                <br>
+                                                <button class="btn btn-light" data-dismiss="modal" type="button">
                                                     <i class="fas fa-times mr-1"></i>
                                                     Chiudi
                                                 </button>
@@ -854,7 +858,7 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
-        <!-- Chiudi e manda a sezione-->
+        <!-- quando chiude il modal manda sempre a sezione-->
         <!--<script>
         jQuery(function($) {
             $('#corsiModal3').on('hidden.bs.modal', function (e) {
@@ -864,6 +868,18 @@
             })
         });
         </script>-->
+        
+        <!-- Chiudi e manda a sezione-->
+        <script>
+        $(function () {
+            $(".custom-close").on('click', function() {
+                $('#corsiModal3').modal('hide');
+                $('html, body').animate({
+                    scrollTop: $("#contact").offset().top
+                }, 2000);
+            });
+        });
+        </script>
         
     </body>
 </html>
