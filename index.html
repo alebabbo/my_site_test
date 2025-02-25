@@ -34,6 +34,7 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Ferrera Lab</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prodotti">corsi</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#maestri">maestri</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">about</a></li>
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li> -->
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">contatti</a></li>
@@ -135,11 +136,10 @@
                             <div class="prodotti-caption">
                                 <div class="text-center">
                                     <div class="prodotti-caption-heading"><span style="background-color: #4eef85ff">
-                                        <b><a data-toggle="modal" href="#corsiModal3"><u>Batteria &#8599</u></a><br>
-                                        Chitarra<br>Pianoforte<br>Violino<br>Basso<br>Canto<br>Effettistica<br>Home recording<br>
+                                        <b>Batteria<br>Violino<br>Pianoforte<br>Chitarra<br>Basso<br>Canto<br>Effettistica<br>Home recording<br>
                                         <!-- <div class="prodotti-caption-subheading text-muted">Descrizione</div> -->
-                                        <a data-toggle="modal" href="#corsiModal1"><u> Propedeutica musicale 3-4 anni &#8599</u></a><br>
-                                        <a data-toggle="modal" href="#corsiModal2"><u> Propedeutica musicale 5-6 anni &#8599</u></a>
+                                        <a data-toggle="modal" href="#corsiModal1"><u> Propedeutica musicale 3-4 anni</u></a><br>
+                                        <a data-toggle="modal" href="#corsiModal2"><u> Propedeutica musicale 5-6 anni</u></a>
                                     </b></span>
                                     </div>                             
                                 </div>
@@ -229,7 +229,37 @@
                                                 <h2 class="text-uppercase">Corso di batteria</h2>
                                                 <p class="item-intro text-muted">con Lorenzo</p>
                                                 <img class="img-fluid d-block mx-auto" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
-                                                <p>Mi chiamo Lorenzo, classe 2001, suono la batteria da ormai 13 anni, e da diverso tempo sono impegnato a suonare sui palchi di tutto il nord Italia con una sola missione: tenere il tempo. Mi diletto in diversi generi perché penso che qualsiasi canzone possa arricchirci, senza dimenticarsi della pratica e dell’esercizio.</p>
+                                                <p class="text-justify">Mi chiamo Lorenzo, classe 2001, suono la batteria da ormai 13 anni, e da diverso tempo sono impegnato a suonare sui palchi di tutto il nord Italia con una sola missione: tenere il tempo. Mi diletto in diversi generi perché penso che qualsiasi canzone possa arricchirci, senza dimenticarsi della pratica e dell’esercizio.</p>
+                                                <!-- guarda script in fondo per custom-close !OCCHIO! devi duplicare lo script e cambiare nome del Modal -->
+                                                <button class="btn btn-primary btn-lg btn-block custom-close" type="button">
+                                                    Chiedi informazioni sul corso
+                                                </button>
+                                                <br>
+                                                <button class="btn btn-light" data-dismiss="modal" type="button">
+                                                    <i class="fas fa-times mr-1"></i>
+                                                    Chiudi
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Corsi Modal 4-->
+                    <div class="prodotti-modal modal fade" id="corsiModal4" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="modal-body">
+                                                <!-- Project Details Go Here-->
+                                                <h2 class="text-uppercase">Corso di violino e pianoforte</h2>
+                                                <p class="item-intro text-muted">con Michela</p>
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/maestri/violino_piano_michela_sm.jpeg" alt="" />
+                                                <p class="text-justify">Sono Michela Canavasso, un'insegnante di musica laureata presso il Conservatorio Giuseppe Verdi di Torino, con votazione 110/110, in possesso di Master di I livello "Esperto dei processi educativi e didattici a scuola" e laureanda in "Scienze e tecnologie psicologiche". Possiedo competenze pedagogiche e psicologiche che mi permettono di progettare un percorso adatto ad ogni studente e livello, con uno sguardo anche ad allievi con difficoltà. Le mie conoscenze comprendono: teoria musicale, solfeggio, fondamenti di tecnica vocale, tecnica pianistica e violinistica, armonia e fondamenti di composizione, propedeutica per bambini.</p>
                                                 <!-- guarda script in fondo per custom-close !OCCHIO! devi duplicare lo script e cambiare nome del Modal -->
                                                 <button class="btn btn-primary btn-lg btn-block custom-close" type="button">
                                                     Chiedi informazioni sul corso
@@ -415,7 +445,62 @@
                 </div>
             </div>
         </section> -->
-            
+
+        <!-- Maestri-->
+        <section class="page-section bg-light" id="maestri">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">I Maestri</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
+                            <h4><a data-toggle="modal" href="#corsiModal3"><u>Lorenzo</u></a></h4>
+                            <p class="text-muted">Batteria</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/lurens_giammalva?igsh=ZWo5bGM4cGduMDJh&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1BLVrXiW5y/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <!--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto" src="assets/img/maestri/violino_piano_michela_sm.jpeg" alt="" />
+                            <h4><a data-toggle="modal" href="#corsiModal4"><u>Michela</u></a></h4>
+                            <p class="text-muted">Violino e pianoforte</p>
+                            <!--<a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>-->
+                        </div>
+                    </div>
+                     <!--<div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>-->
+                </div>
+                <!--<div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div>-->
+            </div>
+        </section>
+
         <!-- About-->
         <section class="page-section" id="about">
            <div class="container">
@@ -880,6 +965,16 @@
             });
         });
         </script>
+        <script>
+            $(function () {
+                $(".custom-close").on('click', function() {
+                    $('#corsiModal4').modal('hide');
+                    $('html, body').animate({
+                        scrollTop: $("#contact").offset().top
+                    }, 2000);
+                });
+            });
+            </script>
         
     </body>
 </html>
