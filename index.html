@@ -276,6 +276,36 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Corsi Modal 5-->
+                    <div class="prodotti-modal modal fade" id="corsiModal5" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="modal-body">
+                                                <!-- Project Details Go Here-->
+                                                <h2 class="text-uppercase">Corso di chitarra</h2>
+                                                <p class="item-intro text-muted">con Gabriele</p>
+                                                <img class="img-fluid d-block mx-auto" src="assets/img/maestri/chitarra_gabriele_sm.jpeg" alt="" />
+                                                <p class="text-justify">Ciao, sono Gabriele Lopez, insegno chitarra da più di 15 anni nelle scuole del Piemonte. Mi sono laureato presso il Conservatorio "Ghedini" di Cuneo in chitarra jazz, ho studiato chitarra blues e jazz con Paolo Milano e Mario Petracca e chitarra moderna con Miky Bianco e Fabrizio "Bicio" Leo. Ho, inoltre, seguito numerosi seminari con chitarristi famosi. Negli anni ho suonato con diverse formazioni generi musicali diversi. Mi piace ampliare le mie conoscenze musicali e trasmettere la grande passione che ho per la musica agli altri!</p>
+                                                <!-- guarda script in fondo per custom-close !OCCHIO! devi duplicare lo script e cambiare nome del Modal -->
+                                                <button class="btn btn-primary btn-lg btn-block custom-close" type="button">
+                                                    Chiedi informazioni sul corso
+                                                </button>
+                                                <br>
+                                                <button class="btn btn-light" data-dismiss="modal" type="button">
+                                                    <i class="fas fa-times mr-1"></i>
+                                                    Chiudi
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <!--  <div class="row">
                     <div class="col-sm-5">
                       1 of 2
@@ -456,8 +486,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
-                            <h4><a data-toggle="modal" href="#corsiModal3"><u>Lorenzo</u></a></h4>
+                            <a data-toggle="modal" href="#corsiModal3"><img class="mx-auto" src="assets/img/maestri/batteria_Lorenzo_sm.jpeg" alt="" />
+                            <h4><u>Lorenzo</u></a></h4>
                             <p class="text-muted">Batteria</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/lurens_giammalva?igsh=ZWo5bGM4cGduMDJh&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1BLVrXiW5y/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -466,11 +496,20 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto" src="assets/img/maestri/violino_piano_michela_sm.jpeg" alt="" />
-                            <h4><a data-toggle="modal" href="#corsiModal4"><u>Michela</u></a></h4>
+                            <a data-toggle="modal" href="#corsiModal4"><img class="mx-auto" src="assets/img/maestri/violino_piano_michela_sm.jpeg" alt="" />
+                            <h4><u>Michela</u></a></h4>
                             <p class="text-muted">Violino e pianoforte</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/can_mic?utm_source=qr&igsh=MWJzbmtxd2RoM29sag==" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1A5XSKH2Hg/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <a data-toggle="modal" href="#corsiModal5"><img class="mx-auto" src="assets/img/maestri/chitarra_gabriele_sm.jpeg" alt="" />
+                            <h4><a data-toggle="modal" href="#corsiModal5"><u>Gabriele</u></a></h4>
+                            <p class="text-muted">Chitarra</p>
+                            <!--<a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/can_mic?utm_source=qr&igsh=MWJzbmtxd2RoM29sag==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1A5XSKH2Hg/" target="_blank"><i class="fab fa-facebook-f"></i></a>-->
                         </div>
                     </div>
                      <!--<div class="col-lg-4">
@@ -955,14 +994,15 @@
         
         <!-- Chiudi e manda a sezione-->
         <script>
-        $(function () {
-            $(".custom-close").on('click', function() {
-                $('#corsiModal3').modal('hide');
-                $('html, body').animate({
-                    scrollTop: $("#contact").offset().top
-                }, 2000);
+            $(function () {
+                $(".custom-close").on('click', function() {
+                    $('#corsiModal3').modal('hide');
+                    $('html, body').animate({
+                        scrollTop: $("#contact").offset().top,
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                });
             });
-        });
         </script>
         <script>
             $(function () {
@@ -970,10 +1010,22 @@
                     $('#corsiModal4').modal('hide');
                     $('html, body').animate({
                         scrollTop: $("#contact").offset().top
-                    }, 2000);
+                    }, 1000, "easeInOutExpo");
+                    return false;
                 });
             });
-            </script>
+        </script>
+        <script>
+            $(function () {
+                $(".custom-close").on('click', function() {
+                    $('#corsiModal5').modal('hide');
+                    $('html, body').animate({
+                        scrollTop: $("#contact").offset().top
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                });
+            });
+        </script>
         
     </body>
 </html>
