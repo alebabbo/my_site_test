@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corsi di Musica - Ferrera Lab</title>
+  <style>
+    /* Importazione dei font del sito Ferrera Lab */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@400;500;italic&display=swap');
+
+    body {
+      font-family: 'Roboto Slab', serif;
+      background-color: transparent; /* Sfondo trasparente per integrarsi in Google Sites */
+      color: #212529;
+      margin: 0;
+      padding: 10px;
+    }
+    
+    /* Griglia responsiva per le schede */
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      border: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-header {
+      background-color: #212529;
+      color: #ffffff;
+      padding: 25px 20px;
+      text-align: center;
+      border-bottom: 4px solid #1abc9c;
+    }
+    .card-header h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .card-header p {
+      font-family: 'Montserrat', sans-serif;
+      margin: 8px 0 0 0;
+      color: #1abc9c;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .card-body {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: #6c757d;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #e9ecef;
+      padding-bottom: 5px;
+    }
+    .teacher-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #212529;
+      margin: 0 0 5px 0;
+    }
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #495057;
+    }
+    .contact-info a {
+      color: #16a085;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: #212529;
+    }
+    .contact-note {
+      font-size: 12px !important;
+      font-style: italic;
+      color: #868e96 !important;
+      margin-top: 4px !important;
+      line-height: 1.4;
+    }
+    .courses-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .courses-list li {
+      background: #f8f9fa;
+      margin: 8px 0;
+      padding: 10px 14px;
+      border-radius: 6px;
+      border-left: 5px solid #1abc9c;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #212529;
+      transition: background 0.2s ease;
+    }
+    .courses-list li:hover {
+      background: #e9ecef;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cards-container">
+    
+    <!-- SCHEDA 1: GERMANA -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Pianoforte e Chitarra</h2>
+        <p>FERRERA LAB</p>
+      </div>
+      <div class="card-body">
+        <div class="section-title">Insegnante</div>
+        <p class="teacher-name">Germana</p>
+        
+        <div class="section-title">Contatti</div>
+        <div class="contact-info">
+          <p>📞 Telefono: <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p class="contact-note">Per info e costi contattare l'insegnante direttamente.</p>
+        </div>
+
+        <div class="section-title">Corsi Attivi</div>
+        <ul class="courses-list">
+          <li>🎹 Pianoforte (Bambini e Ragazzi)</li>
+          <li>🎸 Chitarra (Bambini e Ragazzi)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SCHEDA 2: DAVIDE -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Chitarra Moderna</h2>
+        <p>FERRERA LAB</p>
+      </div>
+      <div class="card-body">
+        <div class="section-title">Insegnante</div>
+        <p class="teacher-name">Davide</p>
+        
+        <div class="section-title">Contatti</div>
+        <div class="contact-info">
+          <p>📞 Telefono: <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p class="contact-note">Per info e costi contattare l'insegnante direttamente.</p>
+        </div>
+
+        <div class="section-title">Corsi Attivi</div>
+        <ul class="courses-list">
+          <li>🎸 Chitarra Moderna</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SCHEDA 3: DIANA -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Pianoforte</h2>
+        <p>FERRERA LAB</p>
+      </div>
+      <div class="card-body">
+        <div class="section-title">Insegnante</div>
+        <p class="teacher-name">Diana</p>
+        
+        <div class="section-title">Contatti</div>
+        <div class="contact-info">
+          <p>📞 Telefono: <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p class="contact-note">Per info e costi contattare l'insegnante direttamente.</p>
+        </div>
+
+        <div class="section-title">Corsi Attivi</div>
+        <ul class="courses-list">
+          <li>🎹 Pianoforte (Ragazzi e Adulti)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SCHEDA 4: LORENZO -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Batteria</h2>
+        <p>FERRERA LAB</p>
+      </div>
+      <div class="card-body">
+        <div class="section-title">Insegnante</div>
+        <p class="teacher-name">Lorenzo</p>
+        
+        <div class="section-title">Contatti</div>
+        <div class="contact-info">
+          <p>📞 Telefono: <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p class="contact-note">Per info e costi contattare l'insegnante direttamente.</p>
+        </div>
+
+        <div class="section-title">Corsi Attivi</div>
+        <ul class="courses-list">
+          <li>🥁 Batteria</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SCHEDA 5: LUCA -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Audio & Recording</h2>
+        <p>FERRERA LAB</p>
+      </div>
+      <div class="card-body">
+        <div class="section-title">Tecnico / Insegnante</div>
+        <p class="teacher-name">Luca</p>
+        
+        <div class="section-title">Contatti</div>
+        <div class="contact-info">
+          <p>📧 Email: <a href="mailto:audio.ferrera@gmail.com">audio.ferrera@gmail.com</a></p>
+          <p>📞 Telefono: <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p class="contact-note">Per info e costi contattare l'insegnante direttamente.</p>
+        </div>
+
+        <div class="section-title">Servizi e Corsi</div>
+        <ul class="courses-list">
+          <li>🎛️️ Corso di Home Recording</li>
+          <li>🎧 Consulenze Audio</li>
+          <li>🎙️ Studio di Registrazione</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SCHEDA 6: ALESSANDRO -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Grafica & Design</h2>
+        <p>FERRERA LAB</p>
+      </div>
+      <div class="card-body">
+        <div class="section-title">Designer</div>
+        <p class="teacher-name">Alessandro</p>
+        
+        <div class="section-title">Contatti</div>
+        <div class="contact-info">
+          <p>📞 Telefono: <a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p class="contact-note">Per info e costi contattare direttamente.</p>
+        </div>
+
+        <div class="section-title">Servizi</div>
+        <ul class="courses-list">
+          <li>🎨 Grafica e Design per Music Artist</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
